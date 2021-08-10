@@ -1,11 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
   :host {
@@ -93,6 +85,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
+
   }
 
   .card {
@@ -100,12 +93,11 @@
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
-    height: 40px;
+    height: 20px;
     width: 200px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
@@ -267,9 +259,8 @@
   svg#clouds {
     position: fixed;
     bottom: -160px;
-    left: -230px;
     z-index: -10;
-    width: 1920px;
+    width: 1600px;
   }
 
   /* Responsive Styles */
@@ -387,7 +378,7 @@
   <input type="hidden" #selection>
 
   <div class="card-container">
-    <button class="card card-small" (click)="onClickMe() ; selection.value = 'tatu'" tabindex="0">
+    <button class="card card-small" (click)="onClickMe() ; selection.value = ''" tabindex="0">
         <!-- <button class="card card-small" (click)="onClickMe()"> -->
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>DO NOT Click me !</span>
@@ -491,12 +482,8 @@
 
 </div>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 
 <router-outlet></router-outlet>
