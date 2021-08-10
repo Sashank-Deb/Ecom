@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Load-App';
+  title = 'Ecommerce';
+  clickMessage = 'Are Deewano Mujeh Pehechano';
+
+  onClickMe() {
+    this.clickMessage = 'Don Don Don Don Don';
+}
 }
